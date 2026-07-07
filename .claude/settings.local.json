@@ -23,7 +23,14 @@
       "mcp__notion__notion-search",
       "mcp__notion__notion-fetch",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git check-ignore *)",
+      "Bash(git commit -q -m ' *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app.py',encoding='utf-8'\\).read\\(\\)\\); print\\('문법 OK'\\)\")",
+      "Bash(python -c \"from datetime import date; t=date.today\\(\\); w=['월','화','수','목','금','토','일'][t.weekday\\(\\)]; print\\(f'표시 예시: 오늘은 {t.isoformat\\(\\)} \\({w}\\) 입니다.'\\)\")"
     ]
   }
 }
