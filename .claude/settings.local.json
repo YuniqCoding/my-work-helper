@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"c:\\\\Users\\\\KSA\\\\Desktop\\\\vibe-coding\\\\my-work-helper\\\\work-files\" -Recurse | Select-Object FullName, @{Name=\"Type\";Expression={if\\($_.PSIsContainer\\){\"폴더\"}else{\"파일\"}}}, Length)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "PowerShell(python -c \"import ast; ast.parse\\(open\\('agent.py', encoding='utf-8'\\).read\\(\\)\\); print\\('syntax OK'\\)\")",
+      "PowerShell(python -c \"import anthropic; print\\('anthropic', anthropic.__version__\\)\")",
+      "PowerShell(python -m pip install anthropic)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; \"exit\" | python agent.py)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python \"C:\\\\Users\\\\KSA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-KSA-Desktop-vibe-coding-my-work-helper\\\\96f93e93-e41a-4542-a79f-a7a6dd238e02\\\\scratchpad\\\\run_summary.py\")",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python \"C:\\\\Users\\\\KSA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-KSA-Desktop-vibe-coding-my-work-helper\\\\96f93e93-e41a-4542-a79f-a7a6dd238e02\\\\scratchpad\\\\run_all.py\")",
+      "PowerShell(python -c \"import ast; ast.parse\\(open\\('app.py', encoding='utf-8'\\).read\\(\\)\\); print\\('app.py syntax OK'\\)\")",
+      "PowerShell(python -c \"import streamlit; print\\('streamlit', streamlit.__version__\\)\" 2>&1)",
+      "PowerShell(python -c \"import agent; print\\('agent import OK ->', [n for n in \\('read_schedule_file','search_documents','summarize_today_schedule','extract_meeting_todos','answer_from_reports','load_env_file'\\) if hasattr\\(agent,n\\)]\\)\")",
+      "PowerShell(python -m pip install streamlit)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python app.py 2>&1 | Select-Object -First 15)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python -m streamlit run app.py --server.headless true --server.port 8760)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python -m streamlit run app.py --server.headless true --server.port 8761)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python -m streamlit run app.py --server.headless true --server.port 8762)",
+      "mcp__notion__notion-search",
+      "mcp__notion__notion-fetch",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

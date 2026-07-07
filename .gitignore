@@ -1,0 +1,9 @@
+# 환경변수 / 비밀 값
+.env
+
+# Streamlit 비밀 값 (API 키 등) — 절대 GitHub에 올리지 않는다
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
